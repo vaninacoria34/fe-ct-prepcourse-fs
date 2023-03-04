@@ -253,7 +253,7 @@ function continueStatement(num) {
       numArray.push(num += 2)
      } 
 
-  return numArray
+  return numArraygit 
 
 
 
