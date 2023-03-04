@@ -5,7 +5,7 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-   if (x > y ) return x;
+   if (x > y )  return x;
    else return y;
    if (y == x)  return x;
    else return y;
