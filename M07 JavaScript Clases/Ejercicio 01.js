@@ -52,7 +52,7 @@ function agregarStringInvertida() {
    
 'hola' --> [h,o,l,a] --> [a,l,o,h]
   String.prototype.reverse = function(){
-   return this.split('').reverse().join('')
+   return this.split('');reverse();join;('')
   }
 
 

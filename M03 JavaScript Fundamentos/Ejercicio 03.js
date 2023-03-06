@@ -38,11 +38,14 @@ function mayorQueCincuenta(num) {
    // Retorna True si el argumento "num" es mayor que cincuenta.
    // De lo contrario, retorna False.
    // Tu código:
-   if (num > 50 ) {
-   return True; 
-}  else if (num < 50){
-    return False;
- }
+   if (num  > 50) {
+      return true;
+    } else {
+     return false;
+
+    }  
+
+    
 }
 
 function esPar(num) {
