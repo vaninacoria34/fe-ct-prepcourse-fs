@@ -100,12 +100,15 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 5, retorna "buzz".
    // De lo contrario, retorna el número.
    // Tu código  
+   if (num % 3 === 0 && num % 5 === 0) return "fizzbuzz";
+  if (num % 3 === 0) return "fizz";
+  if(num % 5 === 0 ) return "buzz";
+  return num;
     
-   if (num % 3 === 0 && num % 5 === 0 ) return "fizzbuzz";
-   if (num % 3 === 0) return "fizz";
-    if(num % 5 === 0) return "buzz";
-    return false;
-    }
+}    
+    
+    
+    
 
 function  operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
@@ -118,11 +121,10 @@ function  operadoresLogicos(num1, num2, num3) {
   if (num1 > num2 && num1 > num3 &&  num1 > 0) {
   return "Numero 1 es mayor y positivo";
    } if (num1<0 ||  num2<0 ||  num3<0 ) return "Hay negativos";
-    if (num3 > num2 && num3 > num1){
-      num3 = num3 +1;
-      return num3;
-    } if (num1 == 0 && num2== 0 && num3 == 0) return "Error";
-    
+    if (num3 > num1 && num3 > num2){
+    return  num3 +1;
+} if (num1 === 0 || num2 === 0 || num3 === 0 ) return "Error";
+       return false;
    } 
 
 function esPrimo(num) { 
@@ -132,34 +134,39 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-  if ( num <= 1) {
-   return false;
-} for ( let i = 2; i < num; i++){
-   if (num % i === 0) {
-      return false;
-  }  return true;
+   if (num <= 1 ) return false;
+for(var i = 2; i < num; i++) {
+      if (num % i == 0 ){
+         return false;
+         
+      }
+   }
+
+  return true;
+
 }
-}
+
    
   
   function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (valor === true ); return  "Soy verdadero";
-      
-   
+   if (valor === true )
+    return  "Soy verdadero";
+     else return  "Soy falso";  
+    
 }
 
    function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-   if ( num >= 100 || num <= 999 ) return true;
-    if ( num > 999 ||  num < 100) return false;
+   if ( num >= 100 && num <= 999 ) return true;
+    else return false;
 
  }
-npm 
+
 
 function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
