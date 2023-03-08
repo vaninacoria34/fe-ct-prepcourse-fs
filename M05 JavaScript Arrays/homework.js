@@ -247,13 +247,13 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código
-     const numArray = [];
+     const nuevoArray = [];
      for ( let i = 0 ; i < 10; i++ ) {
       if ( i === 5) continue
-      numArray.push(num += 2)
+      nuevoArray.push(num += 2)
      } 
 
-  return numArraygit 
+  return nuevoArray 
 
 
 
